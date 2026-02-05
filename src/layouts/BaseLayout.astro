@@ -1,0 +1,32 @@
+
+---
+import "../styles/global.css";
+
+const {
+  title = "Pierina’s Studio",
+  description = "Architecture of ideas, code of things, and stories from the road — Studio, Lab, Atlas."
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content={description} />
+    <link rel="icon" href="/favicon/favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="/favicon/safari-pinned-tab.svg">
+    <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+<meta name="theme-color" content="#07070a">
+
+
+    <title>{title}</title>
+  </head>
+  <body>
+    <div class="bg" aria-hidden="true"></div>
+    <main class="wrap">
+      <slot />
+    </main>
+  </body>
+</html>
