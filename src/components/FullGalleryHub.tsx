@@ -4,17 +4,17 @@ type Card = { src: string; alt: string; href: string; label?: string };
 
 const cards: Card[] = [
   { src: "/collage/1.png", alt: "Portfolio preview", href: "https://portfolio.pierinalopez.com", label: "Studio" },
-  { src: "/collage/2.png", alt: "Travel photo", href: "/atlas", label: "Atlas" },
+  { src: "/collage/2.png", alt: "Travel photo", href: "https://atlas.pierinalopez.com/", label: "Atlas" },
   { src: "/collage/3.png", alt: "Architecture reference", href: "/sketchbook", label: "Sketchbook" },
   { src: "/collage/4.png", alt: "Project UI", href: "/lab", label: "Lab" },
   { src: "/collage/5.png", alt: "Studio", href: "https://portfolio.pierinalopez.com", label: "Studio" },
-  { src: "/collage/6.png", alt: "Atlas", href: "/atlas", label: "Atlas" },
+  { src: "/collage/6.png", alt: "Atlas", href: "https://atlas.pierinalopez.com/", label: "Atlas" },
   { src: "/collage/7.png", alt: "Lab", href: "/lab", label: "Lab" },
   { src: "/collage/8.png", alt: "Sketchbook", href: "/sketchbook", label: "Sketchbook" },
-  { src: "/collage/9.png", alt: "Travel route", href: "/atlas", label: "Atlas" },
+  { src: "/collage/9.png", alt: "Travel route", href: "https://atlas.pierinalopez.com/", label: "Atlas" },
   { src: "/collage/10.png", alt: "Moodboard", href: "/sketchbook", label: "Sketchbook" },
   { src: "/collage/11.png", alt: "Hardware project", href: "/lab", label: "Lab" },
-  { src: "/collage/12.png", alt: "City photo", href: "/atlas", label: "Atlas" },
+  { src: "/collage/12.png", alt: "City photo", href: "https://atlas.pierinalopez.com/", label: "Atlas" },
 ];
 
 function useAutoScroll(ref: React.RefObject<HTMLDivElement | null>, speed = 0.42) {
@@ -141,7 +141,7 @@ export function FullGalleryHub() {
         </button>
         <div className="dockPanel">
           <a className="dockItem" href="https://portfolio.pierinalopez.com" target="_blank" rel="noreferrer">Portfolio</a>
-          <a className="dockItem" href="/atlas">Atlas</a>
+          <a className="dockItem" href="https://atlas.pierinalopez.com/" target="_blank" rel="noreferrer">Atlas</a>
           <a className="dockItem" href="/lab">Lab</a>
           <a className="dockItem" href="/sketchbook">Sketchbook</a>
         </div>
